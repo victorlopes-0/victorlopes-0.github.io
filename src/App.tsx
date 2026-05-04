@@ -1,6 +1,5 @@
 import { useState } from 'react'
-
-import './App.css'
+import TerminalIcon from '@mui/icons-material/Terminal';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,9 +7,8 @@ function App() {
   return (
     <>
       <section id="center">
+        <TerminalIcon />
         <button
-          type="button"
-          className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
           Count is {count}
